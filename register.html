@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register Page</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      html,
+      body {
+        width: 100%;
+        height: 100%;
+      }
+
+      body {
+        background-color: rgb(168, 163, 163);
+      }
+
+      form {
+        width: 80%;
+        margin: auto;
+        padding: 10px;
+        text-align: left;
+        background-color: antiquewhite;
+        color: brown;
+      }
+
+      form fieldset {
+        padding: 20px 60px;
+      }
+
+      form fieldset legend {
+        font-size: 35px;
+        font-weight: 400;
+
+      }
+      
+      .inputBox {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        /* justify-content: space-between; */
+        margin-bottom: 30px;
+      }
+
+      form label {
+        font-size: 35px;
+        font-weight: 550;
+        width: 30%;
+        text-align: left;
+      }
+
+      form input {
+        font-size: 20px;
+        font-weight: 300;
+        height: 50px;
+        outline: none;
+        padding: 2px 4px;
+        color: brown;
+        border: 2px solid gray;
+        align-items: center;
+        width: 70%;
+      }
+
+      form input::placeholder {
+        font-weight: 200;
+        opacity: 0.5;
+      }
+
+      #buttonContainer {
+        width: 100%;
+        text-align: center;
+        
+      }
+
+      button {
+        padding: 5px 8px;
+        font-size: 30px;
+        border-radius: 10px;
+        border: 2px solid gray;
+        outline: none;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <form target="_self">
+      <fieldset>
+        <legend>Registration Form</legend>
+        <div class="inputBox">
+            <label for="fname">First Name: </label>
+            <input type="text" id="fname" placeholder="First Name" />
+        </div>
+        <div class="inputBox">
+            <label for="lname">Last Name: </label>
+            <input type="text" id="lname" placeholder="Last Name" />
+        </div>
+        <div class="inputBox">
+            <label for="contactnumber">Contact Number: </label>
+            <input type="number" id="contactnumber" placeholder="Contact Number" />
+        </div>
+        <div class="inputBox">
+          <label for="email">Email: </label>
+          <input type="email" id="email" placeholder="example@gmail.com" />
+        </div>
+        <div class="inputBox">
+          <label for="password">Password: </label>
+          <input type="password" id="password" placeholder="password" />
+        </div>
+        <div id="buttonContainer">
+            <a href="login.html">
+                <button type="button">Sign Up</button>
+            </a>
+        </div>
+      </fieldset>
+    </form>
+  </body>
+</html>
